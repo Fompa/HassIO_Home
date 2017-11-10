@@ -1,0 +1,53 @@
+homeassistant:
+
+  name: Home
+  latitude: !secret homeassistant_latitude
+  longitude: !secret homeassistant_longitude
+  elevation: !secret homeassistant_elevation
+  unit_system: metric
+  time_zone: Europe/Stockholm
+  customize: !include_dir_merge_named customize
+  customize_domain: !include_dir_merge_named customize_domain
+  customize_glob: !include_dir_merge_named customize_glob
+
+  packages: !include_dir_named packages
+
+frontend:
+
+config:
+
+http:
+  api_password: !secret http_password
+
+updater:
+  include_used_components: true
+
+discovery:
+
+conversation:
+
+history:
+
+logbook:
+
+sun:
+
+tts:
+  - platform: google
+
+zwave:
+  usb_path: /dev/ttyAMA0
+
+notify:
+ - name: Pushbullet
+   platform: pushbullet
+   api_key: !secret notify_api_key
+
+
+group: !include_dir_merge_named group
+device_tracker: !include_dir_merge_list device_tracker
+sensor: !include_dir_merge_list sensor
+automation: !include_dir_merge_list automation
+scene: !include_dir_merge_list scene
+switch: !include_dir_merge_list switch
+script: !include_dir_merge_named script
