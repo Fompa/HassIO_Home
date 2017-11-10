@@ -1,0 +1,10 @@
+- alias: 'Fönsterbeslysning av vid soluppgång'
+  trigger:
+    - platform: sun
+      event: sunrise
+      offset: '-01:00:00'
+
+  action:
+    - service: switch.turn_off
+      entity_id:
+        - switch.telldus_tzwp100_plugin_switch_switch

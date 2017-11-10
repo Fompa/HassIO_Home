@@ -1,0 +1,15 @@
+media_player.kok:
+  friendly_name: 'Kök'
+  hidden: True
+
+media_player.vardagsrum:
+  friendly_name: 'vardagsrum'
+  hidden: True
+
+media_player.tvrum:
+  friendly_name: 'TV-rum'
+  hidden: True
+
+media_player.65pft652012:
+  friendly_name: 'TV Vardagsrum'
+  hidden: True

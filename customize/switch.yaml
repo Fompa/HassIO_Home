@@ -1,0 +1,3 @@
+switch.telldus_tzwp100_plugin_switch_switch:
+  friendly_name: 'Kontor'
+  hidden: False

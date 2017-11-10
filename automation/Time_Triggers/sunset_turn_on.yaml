@@ -1,0 +1,10 @@
+- alias: 'Fönsterbeslysning på vid solnedgång'
+  trigger:
+    - platform: state
+      entity_id: sun.sun
+      to: 'below_horizon'
+
+  action:
+    - service: switch.turn_on
+      entity_id:
+       - switch.telldus_tzwp100_plugin_switch_switch

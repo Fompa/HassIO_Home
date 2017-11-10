@@ -1,0 +1,17 @@
+# Open door warning
+- alias: Altandörr öppnas - Pushbullet
+  trigger:
+    platform: state
+    entity_id: sensor.sensative_strips_access_control
+    to: '22'
+
+  condition:
+    condition: state
+    entity_id: device_tracker.thommy
+    state: 'home'
+
+  action:
+    service: notify.pushbullet
+    data:
+      title: 'Altandörren öppnades!'
+      message: 'Altandörren på Berglyckan öppnades!'
