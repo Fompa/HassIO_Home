@@ -32,6 +32,8 @@ logbook:
 
 sun:
 
+map:
+
 tts:
   - platform: google
 
@@ -56,3 +58,4 @@ automation: !include_dir_merge_list automation
 scene: !include_dir_merge_list scene
 switch: !include_dir_merge_list switch
 script: !include_dir_merge_named script
+zone: !include_dir_merge_list zone

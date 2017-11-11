@@ -1,0 +1,4 @@
+- tracker_group:
+    name: Tracker group
+    entities:
+        - device_tracker.phone_756ea23fdc7a4bc98abbc533799c3501
