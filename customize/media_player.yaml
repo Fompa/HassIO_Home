@@ -13,3 +13,11 @@ media_player.tvrum:
 media_player.65pft652012:
   friendly_name: 'TV Vardagsrum'
   hidden: True
+
+media_player.plex_web_chrome:
+  friendly_name: 'Plex Media Server'
+  hidden: True
+
+media_player.thommys_iphone:
+  friendly_name: 'Thommys Iphone'
+  hidden: True

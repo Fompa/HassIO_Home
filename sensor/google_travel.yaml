@@ -1,0 +1,11 @@
+- platform: google_travel_time
+  name: Till Thommys jobb
+  api_key: !secret google_travel_time_api_key
+  origin: zone.home
+  destination: zone.thommys_jobb
+
+- platform: google_travel_time
+  name: Till Emmas jobb
+  api_key: !secret google_travel_time_api_key
+  origin: zone.home
+  destination: zone.emmas_jobb
