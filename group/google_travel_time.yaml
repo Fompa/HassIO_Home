@@ -1,0 +1,5 @@
+google_travel_time_group:
+  name: Restider
+  entities:
+      - sensor.till_emmas_jobb
+      - sensor.till_thommys_jobb

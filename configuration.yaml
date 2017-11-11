@@ -46,8 +46,8 @@ notify:
    api_key: !secret notify_api_key
 
 mqtt:
-  broker: m21.cloudmqtt.com
-  port: 10699
+  broker: m23.cloudmqtt.com
+  port: 18868
   username: !secret mqtt_username
   password: !secret mqtt_password
 
