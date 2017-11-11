@@ -43,6 +43,11 @@ notify:
    platform: pushbullet
    api_key: !secret notify_api_key
 
+mqtt:
+  broker: m21.cloudmqtt.com
+  port: 10699
+  username: !secret mqtt_username
+  password: !secret mqtt_password
 
 group: !include_dir_merge_named group
 device_tracker: !include_dir_merge_list device_tracker
